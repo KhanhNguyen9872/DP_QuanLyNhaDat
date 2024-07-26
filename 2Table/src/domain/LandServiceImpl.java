@@ -107,7 +107,7 @@ public class LandServiceImpl extends Publisher implements LandService {
         List<Land> listLands = this.persistenceService.getAllLands();
 
         for (Land land : listLands) {
-            if (loaiNha.toLowerCase().equals(land.getLoaiDat().toLowerCase())) {
+            if (loaiNha.toLowerCase().equals(land.getLoai().toLowerCase())) {
                 tong = tong + 1;
             }   
         }

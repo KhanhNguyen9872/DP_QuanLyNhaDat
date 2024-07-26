@@ -106,7 +106,7 @@ public class HouseServiceImpl extends Publisher implements HouseService {
         List<House> listHouses = this.persistenceService.getAllHouses();
 
         for (House house : listHouses) {
-            if (loaiNha.toLowerCase().equals(house.getLoaiNha().toLowerCase())) {
+            if (loaiNha.toLowerCase().equals(house.getLoai().toLowerCase())) {
                 tong = tong + 1;
             }   
         }

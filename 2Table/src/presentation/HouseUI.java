@@ -192,7 +192,7 @@ public class HouseUI extends JFrame implements Subscriber, ActionListener, ListS
         tableModel.setRowCount(0); // clear table
 
         for(House house : houses) {
-            Object[] row = { house.getMaGiaoDich(), house.getNgayGiaoDich(), house.getDonGia(), house.getLoaiNha(), house.getDiaChi(), house.getDienTich() };
+            Object[] row = { house.getMaGiaoDich(), house.getNgayGiaoDich(), house.getDonGia(), house.getLoai(), house.getDiaChi(), house.getDienTich() };
             tableModel.addRow(row);
         }
     }
@@ -322,7 +322,7 @@ public class HouseUI extends JFrame implements Subscriber, ActionListener, ListS
         String maGiaoDich = String.valueOf(house.getMaGiaoDich());
         String ngayGiaoDich = house.getNgayGiaoDich();
         String donGia = String.valueOf(house.getDonGia());
-        String loaiNha = house.getLoaiNha();
+        String loaiNha = house.getLoai();
         String diaChi = house.getDiaChi();
         String dienTich = String.valueOf(house.getDienTich());
 

@@ -1,20 +1,13 @@
 package persistence;
 
-import java.io.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JOptionPane;
-
-import com.mysql.cj.protocol.Message;
-
-import domain.model.House;
 import domain.model.Land;
 
 public class LandPersistenceServiceImpl implements LandPersistenceService {
@@ -61,7 +54,7 @@ public class LandPersistenceServiceImpl implements LandPersistenceService {
             preparedStatement.setInt(1, land.getMaGiaoDich());
             preparedStatement.setString(2, land.getNgayGiaoDich());
             preparedStatement.setInt(3, land.getDonGia());
-            preparedStatement.setString(4, land.getLoaiDat());
+            preparedStatement.setString(4, land.getLoai());
             preparedStatement.setDouble(5, land.getDienTich());
             preparedStatement.execute();
         } catch (Exception ex) {
@@ -80,7 +73,7 @@ public class LandPersistenceServiceImpl implements LandPersistenceService {
 
             preparedStatement.setString(1, land.getNgayGiaoDich());
             preparedStatement.setInt(2, land.getDonGia());
-            preparedStatement.setString(3, land.getLoaiDat());
+            preparedStatement.setString(3, land.getLoai());
             preparedStatement.setDouble(4, land.getDienTich());
             preparedStatement.setInt(5, land.getMaGiaoDich());
             preparedStatement.execute();

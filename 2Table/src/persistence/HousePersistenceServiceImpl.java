@@ -1,18 +1,12 @@
 package persistence;
 
-import java.io.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.JOptionPane;
-
-import com.mysql.cj.protocol.Message;
 
 import domain.model.House;
 
@@ -60,7 +54,7 @@ public class HousePersistenceServiceImpl implements HousePersistenceService {
             preparedStatement.setInt(1, house.getMaGiaoDich());
             preparedStatement.setString(2, house.getNgayGiaoDich());
             preparedStatement.setInt(3, house.getDonGia());
-            preparedStatement.setString(4, house.getLoaiNha());
+            preparedStatement.setString(4, house.getLoai());
             preparedStatement.setString(5, house.getDiaChi());
             preparedStatement.setDouble(6, house.getDienTich());
             preparedStatement.execute();
@@ -80,7 +74,7 @@ public class HousePersistenceServiceImpl implements HousePersistenceService {
 
             preparedStatement.setString(1, house.getNgayGiaoDich());
             preparedStatement.setInt(2, house.getDonGia());
-            preparedStatement.setString(3, house.getLoaiNha());
+            preparedStatement.setString(3, house.getLoai());
             preparedStatement.setString(4, house.getDiaChi());
             preparedStatement.setDouble(5, house.getDienTich());
             preparedStatement.setInt(6, house.getMaGiaoDich());

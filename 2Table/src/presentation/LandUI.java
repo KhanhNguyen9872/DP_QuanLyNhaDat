@@ -185,7 +185,7 @@ public class LandUI extends JFrame implements Subscriber, ActionListener, ListSe
         tableModel.setRowCount(0); // clear table
 
         for(Land land : lands) {
-            Object[] row = { land.getMaGiaoDich(), land.getNgayGiaoDich(), land.getDonGia(), land.getLoaiDat(), land.getDienTich() };
+            Object[] row = { land.getMaGiaoDich(), land.getNgayGiaoDich(), land.getDonGia(), land.getLoai(), land.getDienTich() };
             tableModel.addRow(row);
         }
     }
@@ -313,7 +313,7 @@ public class LandUI extends JFrame implements Subscriber, ActionListener, ListSe
         String maGiaoDich = String.valueOf(land.getMaGiaoDich());
         String ngayGiaoDich = land.getNgayGiaoDich();
         String donGia = String.valueOf(land.getDonGia());
-        String loaiDat = land.getLoaiDat();
+        String loaiDat = land.getLoai();
         String dienTich = String.valueOf(land.getDienTich());
 
         this.textMaGiaoDich.setText(maGiaoDich);
