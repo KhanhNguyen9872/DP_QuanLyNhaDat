@@ -30,12 +30,16 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
 
     @Override
     public Transaction getTransaction() {
-        return this.transaction;
+        Transaction trans = this.transaction;
+        this.transaction = null;
+        return trans;
     }
 
     @Override
     public List<Transaction> getTransactions() {
-        return this.transactions;
+        List<Transaction> trans = this.transactions;
+        this.transactions = null;
+        return trans;
     }
 
     @Override
@@ -56,46 +60,36 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
     @Override
     public void add(Transaction transaction) {
         this.persistenceService.add(transaction);
-        this.transaction = null;
-        this.transactions = null;
         changeState();
     }
 
     @Override
     public void update(Transaction transaction) {
         this.persistenceService.update(transaction);
-        this.transaction = null;
-        this.transactions = null;
         changeState();
     }
 
     @Override
     public void delete(int id) {
         this.persistenceService.delete(id);
-        this.transaction = null;
-        this.transactions = null;
         changeState();
     }
 
     @Override
     public void find(int id) {
         this.transaction = this.persistenceService.getTransactionByID(id);
-        this.transactions = null;
         changeState();
     }
 
     @Override
     public void getAllTransactions() {
         this.transactions = this.persistenceService.getAllTransactions();
-        this.transaction = null;
         changeState();
     }
 
     @Override
     public void calcMoney(Transaction transaction) {
         this.thanhTien = transaction.getThanhTien();
-        this.transaction = null;
-        this.transactions = null;
         changeState();
     }
 
@@ -118,8 +112,6 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
         }
 
         this.soLuong = tong;
-        this.transaction = null;
-        this.transactions = null;
         changeState();
     }
 
@@ -143,8 +135,6 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
         }
 
         this.avgMoney = (double)(money / count);
-        this.transaction = null;
-        this.transactions = null;
         changeState();
     }
 
@@ -161,8 +151,6 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
         }
 
         this.avgMoney = (double)(money / count);
-        this.transaction = null;
-        this.transactions = null;
         changeState();
     }
 
@@ -195,7 +183,6 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
         }
 
         this.transactions = result;
-        this.transaction = null;
         changeState();
     }
 }

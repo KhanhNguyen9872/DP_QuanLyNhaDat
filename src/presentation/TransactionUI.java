@@ -510,6 +510,7 @@ public class TransactionUI extends JFrame implements Subscriber, ActionListener,
             setTransaction(transaction);
         } else if (transactions != null) {
             reloadTable(transactions);
+            clearInput();
         } else if (thanhTien > -1) {
             JOptionPane.showMessageDialog(this, "Thành tiền: " + thanhTien);
         } else if (soLuong > -1) {
