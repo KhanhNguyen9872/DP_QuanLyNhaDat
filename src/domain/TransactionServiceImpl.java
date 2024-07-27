@@ -123,10 +123,9 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
     }
 
     @Override
-    public void avgMoneyHouse() {
+    public void avgMoneyHouse(List<Transaction> listTransactions) {
         double money = 0;
         int count = 0;
-        List<Transaction> listTransactions = this.persistenceService.getAllTransactions();
         for (Transaction transaction : listTransactions) {
             if (transaction.getClass().equals(House.class)) {
                 money = money + transaction.getThanhTien();
@@ -139,10 +138,9 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
     }
 
     @Override
-    public void avgMoneyLand() {
+    public void avgMoneyLand(List<Transaction> listTransactions) {
         double money = 0;
         int count = 0;
-        List<Transaction> listTransactions = this.persistenceService.getAllTransactions();
         for (Transaction transaction : listTransactions) {
             if (transaction.getClass().equals(Land.class)) {
                 money = money + transaction.getThanhTien();

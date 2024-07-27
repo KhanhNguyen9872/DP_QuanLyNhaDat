@@ -24,7 +24,7 @@ import domain.TransactionService;
 
 public class TransactionUI extends JFrame implements Subscriber, ActionListener, ListSelectionListener {
     private TransactionService transactionService = null;
-
+    private List<Transaction> currentTransactions;
     private JMenuBar jMenuBar = null;
     private DefaultTableModel tableModel = null;
     private JTable transactionTable = null;
@@ -215,6 +215,7 @@ public class TransactionUI extends JFrame implements Subscriber, ActionListener,
                 tableModel.addRow(row);
             }
         }
+        this.currentTransactions = transactions;
     }
 
     public void clearInput() {
@@ -264,6 +265,10 @@ public class TransactionUI extends JFrame implements Subscriber, ActionListener,
             return new Land(maGiaoDich, ngayGiaoDich, donGia, loaiDat, dienTich);
         }
         return new House(maGiaoDich, ngayGiaoDich, donGia, loaiNha, diaChi, dienTich);
+    }
+
+    public List<Transaction> getListTransactions() {
+        return this.currentTransactions;
     }
 
     public Command calcMoney(Transaction transaction) {
@@ -325,11 +330,11 @@ public class TransactionUI extends JFrame implements Subscriber, ActionListener,
     }
 
     public Command avgMoneyHouse() {
-        return new AvgHouseCommand(this.transactionService);
+        return new AvgHouseCommand(this.transactionService, getListTransactions());
     }
 
     public Command avgMoneyLand() {
-        return new AvgLandCommand(this.transactionService);
+        return new AvgLandCommand(this.transactionService, getListTransactions());
     }
 
     public Command exportData() {

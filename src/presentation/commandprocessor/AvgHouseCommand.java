@@ -1,14 +1,20 @@
 package presentation.commandprocessor;
 
+import java.util.List;
+
 import domain.TransactionService;
+import domain.model.Transaction;
 
 public class AvgHouseCommand extends Command {
-    public AvgHouseCommand(TransactionService transactionService) {
+    private List<Transaction> listTransactions;
+    
+    public AvgHouseCommand(TransactionService transactionService, List<Transaction> listTransactions) {
         this.transactionService = transactionService;
+        this.listTransactions = listTransactions;
     }
 
     @Override
     public void execute() {
-        this.transactionService.avgMoneyHouse();
+        this.transactionService.avgMoneyHouse(listTransactions);
     }
 }

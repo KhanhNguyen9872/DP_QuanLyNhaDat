@@ -30,8 +30,8 @@ public interface TransactionService {
     public int getCountTransaction();
 
     // tinhTrungBinhThanhTien
-    public void avgMoneyHouse();
-    public void avgMoneyLand();
+    public void avgMoneyHouse(List<Transaction> listTransactions);
+    public void avgMoneyLand(List<Transaction> listTransactions);
     public double getAvgMoney();
 
     // export
