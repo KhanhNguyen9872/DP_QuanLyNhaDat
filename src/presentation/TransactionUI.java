@@ -351,9 +351,6 @@ public class TransactionUI extends JFrame implements Subscriber, ActionListener,
     }
 
     public void setTransaction(Transaction transaction) {
-        if (transaction.getClass().equals(House.class)) {
-            
-        }
         String maGiaoDich = String.valueOf(transaction.getMaGiaoDich());
         String ngayGiaoDich = transaction.getNgayGiaoDich();
         String donGia = String.valueOf(transaction.getDonGia());
@@ -368,9 +365,9 @@ public class TransactionUI extends JFrame implements Subscriber, ActionListener,
         if (transaction.getClass().equals(House.class)) {
             this.comboBoxLoaiDat.setSelectedIndex(-1);
 
-            if (loai.toLowerCase().equals("nhà cao cấp")) {
+            if (loai.toLowerCase().equals("cao cấp")) {
                 this.comboBoxLoaiNha.setSelectedIndex(1);
-            } else if (loai.toLowerCase().equals("nhà thường")) {
+            } else if (loai.toLowerCase().equals("thường")) {
                 this.comboBoxLoaiNha.setSelectedIndex(0);
             } else {
                 this.comboBoxLoaiNha.setSelectedIndex(-1);
@@ -432,7 +429,7 @@ public class TransactionUI extends JFrame implements Subscriber, ActionListener,
         
         if (loaiNha.toLowerCase().equals("cao cấp")) {
             this.comboBoxLoaiNha.setSelectedIndex(1);
-        } else if (loaiDat.toLowerCase().equals("thường")) {
+        } else if (loaiNha.toLowerCase().equals("thường")) {
             this.comboBoxLoaiNha.setSelectedIndex(0);
         } else {
             this.comboBoxLoaiNha.setSelectedIndex(-1);

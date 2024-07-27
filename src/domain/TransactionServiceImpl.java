@@ -80,18 +80,22 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
     @Override
     public void find(int id) {
         this.transaction = this.persistenceService.getTransactionByID(id);
+        this.transactions = null;
         changeState();
     }
 
     @Override
     public void getAllTransactions() {
         this.transactions = this.persistenceService.getAllTransactions();
+        this.transaction = null;
         changeState();
     }
 
     @Override
     public void calcMoney(Transaction transaction) {
         this.thanhTien = transaction.getThanhTien();
+        this.transaction = null;
+        this.transactions = null;
         changeState();
     }
 
@@ -114,6 +118,8 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
         }
 
         this.soLuong = tong;
+        this.transaction = null;
+        this.transactions = null;
         changeState();
     }
 
@@ -137,6 +143,8 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
         }
 
         this.avgMoney = (double)(money / count);
+        this.transaction = null;
+        this.transactions = null;
         changeState();
     }
 
@@ -153,6 +161,8 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
         }
 
         this.avgMoney = (double)(money / count);
+        this.transaction = null;
+        this.transactions = null;
         changeState();
     }
 
@@ -185,6 +195,7 @@ public class TransactionServiceImpl extends Publisher implements TransactionServ
         }
 
         this.transactions = result;
+        this.transaction = null;
         changeState();
     }
 }
