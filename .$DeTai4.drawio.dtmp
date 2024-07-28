@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-07-28T07:26:31.051Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="C-NwV5BMaxb-Bhgtg8wb" version="21.7.5" type="device">
+<mxfile host="Electron" modified="2024-07-28T14:41:56.727Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="WytVBIKW-9IBeGxzlCOZ" version="21.7.5" type="device">
   <diagram id="kVJhwpi9LjxtVQFYLApZ" name="Page">
-    <mxGraphModel dx="2717" dy="903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3090" dy="1152" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,7 +11,7 @@
           <mxGeometry x="-850" y="2000" width="2180" height="1080" as="geometry" />
         </mxCell>
         <mxCell id="OyHK7IOIYtpEXpOzV6Mq-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;shadow=1;" parent="1" vertex="1">
-          <mxGeometry x="-850" y="3080" width="2140" height="920" as="geometry" />
+          <mxGeometry x="-850" y="3080" width="2180" height="920" as="geometry" />
         </mxCell>
         <mxCell id="J8hBxOplMBVv3ACiszUE-8" value="TransactionUI" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-500" y="1290" width="590" height="550" as="geometry" />
@@ -25,7 +25,7 @@
         <mxCell id="J8hBxOplMBVv3ACiszUE-11" value="TransactionUI(transactionService: TransactionService, commandProcessor: CommandProcessor)&lt;br&gt;+ buildMenuBar(): void&lt;br&gt;+ buildPanel(): void&lt;br&gt;+ close(): void&lt;br&gt;+ reloadTable(): void&lt;br&gt;+ reloadTable(transactions: List&amp;lt;Transaction&amp;gt;): void&lt;br&gt;+ clearInput(): void&lt;br&gt;+ getCurrentTransaction(): Transaction&lt;br&gt;+ setTransaction(transaction: Transaction): void&lt;br&gt;+ addTransaction(transaction: Transaction): Command&lt;br&gt;+ updateTransaction(transaction: Transaction): Command&lt;br&gt;+ calcMoney(transaction: Transaction): Command&lt;br&gt;+ deleteTransaction(): Command&lt;br&gt;+ sumCountHouse(): Command&lt;br&gt;+ sumCountLand(): Command&lt;br&gt;+ avgMoneyHouse(): Command&lt;br&gt;+ avgMoneyLand(): Command&lt;br&gt;+ exportData(): Command&lt;br&gt;+ findByID(): Command&lt;br&gt;+ valueChanged(e: ListSelectionEvent): void&lt;br&gt;+ actionPerformed(e: ActionEvent): void&lt;br&gt;+ update(): void" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="J8hBxOplMBVv3ACiszUE-8" vertex="1">
           <mxGeometry y="218" width="590" height="332" as="geometry" />
         </mxCell>
-        <mxCell id="J8hBxOplMBVv3ACiszUE-13" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.707;exitY=-0.007;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="J8hBxOplMBVv3ACiszUE-8" target="J8hBxOplMBVv3ACiszUE-22" edge="1">
+        <mxCell id="J8hBxOplMBVv3ACiszUE-13" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="J8hBxOplMBVv3ACiszUE-8" target="J8hBxOplMBVv3ACiszUE-22" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-279.1199999999999" y="568.44" as="sourcePoint" />
             <mxPoint x="-279" y="380" as="targetPoint" />
@@ -41,12 +41,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="J8hBxOplMBVv3ACiszUE-22" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;java.awt.event&lt;br&gt;ActionListener&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-190" y="1060" width="120" height="100" as="geometry" />
+          <mxGeometry x="-270" y="1060" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="J8hBxOplMBVv3ACiszUE-24" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;javax.swing&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;JFrame&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-20" y="1070" width="120" height="100" as="geometry" />
+          <mxGeometry x="-135" y="1050" width="120" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="J8hBxOplMBVv3ACiszUE-25" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.935;exitY=-0.007;exitDx=0;exitDy=0;entryX=0.405;entryY=1.003;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="J8hBxOplMBVv3ACiszUE-8" target="J8hBxOplMBVv3ACiszUE-24" edge="1">
+        <mxCell id="J8hBxOplMBVv3ACiszUE-25" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.405;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="J8hBxOplMBVv3ACiszUE-8" target="J8hBxOplMBVv3ACiszUE-24" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="205" y="234" as="sourcePoint" />
             <mxPoint x="30" y="390" as="targetPoint" />
@@ -61,7 +61,7 @@
         <mxCell id="J8hBxOplMBVv3ACiszUE-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="J8hBxOplMBVv3ACiszUE-28" vertex="1">
           <mxGeometry y="130" width="430" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="J8hBxOplMBVv3ACiszUE-31" value="TransactionServiceImpl(peristenceService: TransactionPersistenceService)&lt;br&gt;+ changeState(): void&lt;br&gt;+ addSub(s: Subscriber): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ add(transaction: Transaction): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ update(transaction: Transaction): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ delete(id: int): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ find(id: int): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ findGetTransaction(id: int): Transaction&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getAllTransactions(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getData(): List&amp;lt;Transaction&amp;gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getTransaction(): Transaction&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getTransactions(): List&amp;lt;Transaction&amp;gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ calcMoney(transaction: Transaction): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getThanhTIen(): double&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ sumCountTransaction(loai: String): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getCountTransaction(): int&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ avgMoneyHouse(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ avgMoneyLand(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getAvgMoney(): double&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ exportData(month: int): void" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="J8hBxOplMBVv3ACiszUE-28" vertex="1">
+        <mxCell id="J8hBxOplMBVv3ACiszUE-31" value="TransactionServiceImpl(peristenceService: TransactionPersistenceService)&lt;br&gt;+ changeState(): void&lt;br&gt;+ addSub(s: Subscriber): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ add(transaction: Transaction): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ update(transaction: Transaction): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ delete(id: int): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ find(id: int): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ findGetTransaction(id: int): Transaction&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getAllTransactions(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getData(): List&amp;lt;Transaction&amp;gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getTransaction(): Transaction&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getTransactions(): List&amp;lt;Transaction&amp;gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ calcMoney(transaction: Transaction): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getThanhTien(): double&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ sumCountTransaction(loai: String): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getCountTransaction(): int&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ avgMoneyHouse(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ avgMoneyLand(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getAvgMoney(): double&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ exportData(month: int): void" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="J8hBxOplMBVv3ACiszUE-28" vertex="1">
           <mxGeometry y="138" width="430" height="302" as="geometry" />
         </mxCell>
         <mxCell id="J8hBxOplMBVv3ACiszUE-32" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.8;entryY=1.002;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="J8hBxOplMBVv3ACiszUE-28" target="J8hBxOplMBVv3ACiszUE-20" edge="1">
@@ -250,7 +250,7 @@
             <mxPoint x="-220" y="1332" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J8hBxOplMBVv3ACiszUE-94" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="J8hBxOplMBVv3ACiszUE-90" target="J8hBxOplMBVv3ACiszUE-92" edge="1">
+        <mxCell id="J8hBxOplMBVv3ACiszUE-94" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;entryX=0.551;entryY=0.004;entryDx=0;entryDy=0;exitX=0.634;exitY=0.985;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="J8hBxOplMBVv3ACiszUE-90" target="J8hBxOplMBVv3ACiszUE-92" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-622.5" y="2497" as="sourcePoint" />
             <mxPoint x="-452.5" y="2517" as="targetPoint" />
@@ -546,6 +546,18 @@
         </mxCell>
         <mxCell id="_6pt22rpabUaOoZNR9Ep-43" value="&lt;font style=&quot;font-size: 72px;&quot;&gt;&lt;b&gt;Persistence&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="785" y="3110" width="450" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="jAqE1h9VOv2KtT_C8m04-1" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.423;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="J8hBxOplMBVv3ACiszUE-63" target="J8hBxOplMBVv3ACiszUE-143">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="665" y="1580" as="sourcePoint" />
+            <mxPoint x="53" y="2206" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jAqE1h9VOv2KtT_C8m04-2" value="Subscriber" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="1230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jAqE1h9VOv2KtT_C8m04-3" value="Publisher" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="415" y="2600" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
